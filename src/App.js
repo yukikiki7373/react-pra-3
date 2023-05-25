@@ -54,8 +54,6 @@ function App() {
       </label>
       <button onClick={()=>searchGithub(username)}>search</button>
       <hr />
-      <p>{findedUser}</p>
-      <hr />
       {findedUser && <FindGitUser username = {gitUsername} gname = {githubName}/>}
       {findedUser === false && <CantFindGitUser username = {gitUsername}/>}
       {findedUser === undefined && <p></p>}
